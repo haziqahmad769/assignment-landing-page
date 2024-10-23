@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            min-height: 50px;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="desktop.css">
+</head>
+<body class="box" style="border-color: burlywood; display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
+    <!-- header -->
+    <header class="box" style="border-color: grey; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+        <div><img src="assets/logo.png" alt="" height="35px" width="auto"></div>
+        <nav>
+            <ul>
+                <li><a href="">Books</a></li>
+                <li><a href="">Authors</a></li>
+                <li><a href="">What to Read?</a></li>
+                <li><a href="">Gift Ideas</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button><img src="assets/Search.png" alt=""></button>
+            <button><img src="assets/bookmark.png" alt=""></button>
+            <button><img src="assets/Cart.png" alt=""></button>
+        </div>
+        <button id="login-btn">LOGIN</button>
+    </header>
+    <!-- banner -->
+    <section class="box" id="banner" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; align-items: center;">
+        <!-- <p>ALL BOOKS</p>
+        <p>ALL BOOKS</p>
+        <p style="color: black;">ALL BOOKS</p>
+        <p>ALL BOOKS</p>
+        <p>ALL BOOKS</p> -->
+
+        <div>ALL BOOKS</div>
+        <div>ALL BOOKS</div>
+        <div style="color: black;">ALL BOOKS</div>
+        <div>ALL BOOKS</div>
+        <div>ALL BOOKS</div>
+    </section>
+    <!-- book-list -->
+    <section class="box" style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
+        <div class="box" id="bl-container" style="border-color: gray; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; gap: 2px;">
+            <div id="book-menu">1</div>
+            <div id="book-menu">2</div>
+            <div id="book-menu">3</div>
+            <div id="book-menu">4</div>
+            <div id="book-menu">5</div>
+            <div id="book-menu">6</div>
+            <div id="book-menu">7</div>
+            <div id="book-menu">8</div>
+            <div id="book-menu">9</div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="box">footer</footer>
+    
+</body>
+</html>

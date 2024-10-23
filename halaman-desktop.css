@@ -1,0 +1,96 @@
+
+body {
+    background-color: #f5f4ef;
+}
+
+/* guideline */
+.box {
+    border: 1px solid black;
+    min-height: 50px;
+    padding: 20px;
+
+ }
+
+#first-parent {
+    display: flex; 
+    flex-direction: 
+    column; 
+    border-color: aqua; 
+    gap: 10px;
+}
+
+
+
+#header {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    border-color: red; 
+    /* gap: 10px;  */
+    justify-content: space-between;  
+
+}
+
+#container-next-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-color: grey;
+    gap: 10px;
+    justify-content: space-between;
+    
+    
+}
+
+#nav {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    border-color: red; 
+    gap: 10px;
+    justify-content: center;
+}
+
+#book-list {
+    display: flex; 
+    flex-direction: column; 
+    border-color: red; 
+    gap: 10px;
+}
+
+#book-container {
+    border-color: grey; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+#footer {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    border-color: red; 
+    gap: 10px;
+}
+
+#first-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-color: purple;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#second-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-color: purple;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+
+
+
