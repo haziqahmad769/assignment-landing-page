@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
-            border: 1px solid red;
-            min-height: 50px;
-            padding: 20px;
-        }
     </style>
     <link rel="stylesheet" href="desktop.css">
-    <!-- <link rel="stylesheet" href="book-menu.css"> -->
+    <link rel="stylesheet" href="book-menu.css">
 </head>
-<body class="box" style="border-color: burlywood; display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
+<body style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
     <!-- header -->
-    <header class="box" style="border-color: grey; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 10px 20px;">
+    <header style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 10px 20px; margin: 20px 0px;">
         <div><img src="assets/logo.png" alt="" height="35px" width="auto"></div>
         <nav>
             <ul>
@@ -35,7 +30,7 @@
         <button id="login-btn">LOGIN</button>
     </header>
     <!-- banner -->
-    <section class="box" id="banner" style="display: flex; flex-direction: row; justify-content: center; gap: 15px; align-items: center; padding: 10px 0px;">
+    <section id="banner" style="display: flex; flex-direction: row; justify-content: center; gap: 15px; align-items: center; padding: 10px 0px; margin-bottom: 20px;">
         <div>ALL BOOKS</div>
         <div>ALL BOOKS</div>
         <div style="color: #2A2C2E;">ALL BOOKS</div>
@@ -43,37 +38,330 @@
         <div>ALL BOOKS</div>
     </section>
     <!-- book-list -->
-    <section class="box" id="book-list" style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
-        <div class="box" id="bl-container" style="border-color: gray; display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-evenly; gap: 2px;">
+    <section id="book-list" style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
+        <div id="bl-container" style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-evenly; gap: 5px; margin: 50px 0px ;">
           <!-- booklist row -->
-            <div class="box" style="border-color: aqua; display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; justify-content: space-evenly;"></div>
-            <div class="box" style="border-color: aqua; display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; justify-content: space-evenly;"></div>
-            <div class="box" style="border-color: aqua; display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; justify-content: space-evenly;"></div>      
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px;">
+                <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+            
+                    <div style="margin: 25px 0px;">
+                        <!-- container img -->
+                        <div>
+                            <img src="assets/cover-1.png" alt="">
+                        </div>
+            
+                        <!-- container description -->
+                        <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                            <div id="author">Adam Smith</div>
+                            <div id="book-title">The Wealth of Nations</div>
+                            <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                <div id="chat">
+                                    <div>14</div>
+                                    <img src="assets/chat.png" alt="" srcset="">
+                                </div>
+                                <div id="star">
+                                    <div>4.6</div> 
+                                    <img src="assets/star.png" alt="">
+                                    <div>(165)</div>
+                                </div>
+                            </div>
+                            <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                <div>
+                                    <s style="color: #00000061;">$15.50</s>
+                                </div>
+                                <div>
+                                    $10.50
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+            
+                    <div style="margin: 25px 0px;">
+                        <!-- container img -->
+                        <div>
+                            <img src="assets/cover-2.png" alt="">
+                        </div>
+            
+                        <!-- container description -->
+                        <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                            <div id="author">Mikhail Bulgakov</div>
+                            <div id="book-title">Mater Margarita</div>
+                            <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                <div id="chat">
+                                    <div>14</div>
+                                    <img src="assets/chat.png" alt="" srcset="">
+                                </div>
+                                <div id="star">
+                                    <div>4.6</div> 
+                                    <img src="assets/star.png" alt="">
+                                    <div>(165)</div>
+                                </div>
+                            </div>
+                            <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                <div>
+                                    <s style="color: #00000061;">$15.50</s>
+                                </div>
+                                <div>
+                                    $10.50
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+            
+                    <div style="margin: 25px 0px;">
+                        <!-- container img -->
+                        <div>
+                            <img src="assets/cover-3.png" alt="">
+                        </div>
+            
+                        <!-- container description -->
+                        <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                            <div id="author">Alex Gilvarry</div>
+                            <div id="book-title"> <p style="margin: 0px;">From the Memoirs of a<br>Non-Enemy Combatant</p></div>
+                            <div style="display: flex; flex-direction: row; gap: 10px; margin-top: 10px; margin-bottom: 8px;">
+                                <div id="chat">
+                                    <div>14</div>
+                                    <img src="assets/chat.png" alt="" srcset="">
+                                </div>
+                                <div id="star">
+                                    <div>4.6</div> 
+                                    <img src="assets/star.png" alt="">
+                                    <div>(165)</div>
+                                </div>
+                            </div>
+                            <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                <div>
+                                    $10.50
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px;">
+                <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-4.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Patrick Ness</div>
+                             <div id="book-title">More Than This</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcs   et="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     $10.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-5.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Erik Spiekermann</div>
+                             <div id="book-title">Hello I am Erik</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcs   et="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     $10.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-6.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Mario Puzo</div>
+                             <div id="book-title">The Godfather</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcset="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     <s style="color: #00000061;">$15.50</s>
+                                 </div>
+                                 <div>
+                                     $10.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px;">
+                <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-7.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Don Delillo</div>
+                             <div id="book-title">The Names</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcs   et="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     $10.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-8.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Daniel Gargallo</div>
+                             <div id="book-title">She Beyond Sun</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcset="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     <s style="color: #00000061;">$15.50</s>
+                                 </div>
+                                 <div>
+                                     $10.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div id="book-menu" style="display: flex; flex-direction: column; gap: 5px; justify-content: center; align-items: center;">
+               
+                    <div style="margin: 25px 0px;">
+                         <!-- container img -->
+                         <div>
+                             <img src="assets/cover-9.png" alt="">
+                         </div>
+             
+                         <!-- container description -->
+                         <div style="display: flex; flex-direction: column; justify-content: flex-start; gap: 5px; margin-top: 5px;">
+                             <div id="author">Alan Trotter</div>
+                             <div id="book-title">Muscle</div>
+                             <div style="display: flex; flex-direction: row; gap: 10px; margin: 20px 0px;">
+                                 <div id="chat">
+                                     <div>14</div>
+                                     <img src="assets/chat.png" alt="" srcs   et="">
+                                 </div>
+                                 <div id="star">
+                                     <div>4.6</div> 
+                                     <img src="assets/star.png" alt="">
+                                     <div>(165)</div>
+                                 </div>
+                             </div>
+                             <div id="price" style="display: flex; flex-direction: row; gap: 10px;">
+                                 <div>
+                                     $22.50
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </div>
         </div>
     </section>
     <!-- footer -->
-    <footer id="footer" class="box" style="display: flex; flex-direction: column;">
-        <div id="footer-up" class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
-            <div class="box">
+    <footer id="footer" style="display: flex; flex-direction: column; margin-top: 20px;">
+        <div id="footer-up" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+            <div>
                 <img src="assets/logo.png" alt="">
             </div>
-            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 15px;">
                 <div><img src="assets/ig.png" alt=""></div>
                 <div><img src="assets/fb.png" alt=""></div>
                 <div><img src="assets/twitter.png" alt=""></div>
             </div>
         </div>
-        <div id="footer-down" class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
-            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+        <div id="footer-down" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
                 <p>Terms and conditions</p>
                 <p>Privacy policy</p>
             </div>
-            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
                 <p>+44 1332 412251</p>
                 <p>support@bbookshelf.com</p>
             </div>
         </div>
     </footer>
-    
 </body>
 </html>
