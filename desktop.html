@@ -16,7 +16,7 @@
 </head>
 <body class="box" style="border-color: burlywood; display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
     <!-- header -->
-    <header class="box" style="border-color: grey; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+    <header class="box" style="border-color: grey; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 10px 20px;">
         <div><img src="assets/logo.png" alt="" height="35px" width="auto"></div>
         <nav>
             <ul>
@@ -35,15 +35,15 @@
         <button id="login-btn">LOGIN</button>
     </header>
     <!-- banner -->
-    <section class="box" id="banner" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 15px; align-items: center;">
+    <section class="box" id="banner" style="display: flex; flex-direction: row; justify-content: center; gap: 15px; align-items: center; padding: 10px 0px;">
         <div>ALL BOOKS</div>
         <div>ALL BOOKS</div>
-        <div style="color: black;">ALL BOOKS</div>
+        <div style="color: #2A2C2E;">ALL BOOKS</div>
         <div>ALL BOOKS</div>
         <div>ALL BOOKS</div>
     </section>
     <!-- book-list -->
-    <section class="box" style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
+    <section class="box" id="book-list" style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;">
         <div class="box" id="bl-container" style="border-color: gray; display: flex; flex-direction: column; flex-wrap: wrap; justify-content: space-evenly; gap: 2px;">
           <!-- booklist row -->
             <div class="box" style="border-color: aqua; display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; justify-content: space-evenly;"></div>
@@ -52,7 +52,28 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="box">footer</footer>
+    <footer id="footer" class="box" style="display: flex; flex-direction: column;">
+        <div id="footer-up" class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+            <div class="box">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5px;">
+                <div><img src="assets/ig.png" alt=""></div>
+                <div><img src="assets/fb.png" alt=""></div>
+                <div><img src="assets/twitter.png" alt=""></div>
+            </div>
+        </div>
+        <div id="footer-down" class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+                <p>Terms and conditions</p>
+                <p>Privacy policy</p>
+            </div>
+            <div class="box" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+                <p>+44 1332 412251</p>
+                <p>support@bbookshelf.com</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
